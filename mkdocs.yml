@@ -1,0 +1,94 @@
+site_name: Zarish FHIR Data Documentation
+site_description: Comprehensive documentation for FHIR terminology data and resources
+site_author: ZarishSphere Platform
+site_url: https://zarishsphere-platform.github.io/zarish-fhir-data/
+
+repo_name: ZarishSphere-Platform/zarish-fhir-data
+repo_url: https://github.com/ZarishSphere-Platform/zarish-fhir-data
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - mermaid2
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Code Systems:
+      - Overview: codesystems/index.md
+      - SNOMED CT: codesystems/snomed-ct.md
+      - LOINC: codesystems/loinc.md
+      - ICD-10: codesystems/icd-10.md
+      - RxNorm: codesystems/rxnorm.md
+  - Value Sets:
+      - Overview: valuesets/index.md
+      - Vital Signs: valuesets/vital-signs.md
+      - Medications: valuesets/medications.md
+      - Diagnoses: valuesets/diagnoses.md
+      - Procedures: valuesets/procedures.md
+  - Guides:
+      - Getting Started: guides/getting-started.md
+      - Using Terminologies: guides/using-terminologies.md
+      - API Reference: guides/api-reference.md
+      - Contributing: guides/contributing.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ZarishSphere-Platform
+    - icon: fontawesome/brands/docker
+      link: https://github.com/orgs/ZarishSphere-Platform/packages
+
+copyright: Copyright &copy; 2024 ZarishSphere Platform
