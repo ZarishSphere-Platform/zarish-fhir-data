@@ -1,0 +1,26 @@
+{
+  "name" : "bd.fhir.core",
+  "version" : "0.2.0",
+  "tools-version" : 3,
+  "type" : "IG",
+  "date" : "20251006154652",
+  "license" : "CC0-1.0",
+  "canonical" : "https://fhir.dghs.gov.bd/core",
+  "notForPublication" : true,
+  "url" : "file:///tmp/build/output",
+  "title" : "Bangladesh Core FHIR Implementation Guide",
+  "description" : "This Implementation Guide defines the Bangladesh Core FHIR profiles, value sets, code systems, and implementation rules for national digital health systems. (built Mon, Oct 6, 2025 15:46+0000+00:00)",
+  "fhirVersions" : ["4.0.1"],
+  "dependencies" : {
+    "hl7.fhir.r4.core" : "4.0.1",
+    "hl7.terminology.r4" : "6.5.0",
+    "hl7.fhir.uv.extensions.r4" : "5.2.0",
+    "fhir.cqf.common" : "4.0.1"
+  },
+  "author" : "Directorate General of Health Services (DGHS), Bangladesh",
+  "directories" : {
+    "lib" : "package",
+    "example" : "example"
+  },
+  "jurisdiction" : "urn:iso:std:iso:3166#050"
+}

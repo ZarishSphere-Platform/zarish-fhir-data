@@ -1,0 +1,49 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "bd-divisions",
+    "url": "http://zarishsphere.com/fhir/CodeSystem/bd-divisions",
+    "version": "1.0.0",
+    "name": "BangladeshDivisions",
+    "title": "Bangladesh Divisions",
+    "status": "active",
+    "experimental": false,
+    "date": "2025-01-01",
+    "publisher": "Zarish Sphere Platform",
+    "description": "Administrative Divisions of Bangladesh",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "10",
+            "display": "Barishal"
+        },
+        {
+            "code": "20",
+            "display": "Chattogram"
+        },
+        {
+            "code": "30",
+            "display": "Dhaka"
+        },
+        {
+            "code": "40",
+            "display": "Khulna"
+        },
+        {
+            "code": "45",
+            "display": "Mymensingh"
+        },
+        {
+            "code": "50",
+            "display": "Rajshahi"
+        },
+        {
+            "code": "55",
+            "display": "Rangpur"
+        },
+        {
+            "code": "60",
+            "display": "Sylhet"
+        }
+    ]
+}

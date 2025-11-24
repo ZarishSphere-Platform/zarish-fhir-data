@@ -1,0 +1,317 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "bd-districts",
+    "url": "http://zarishsphere.com/fhir/CodeSystem/bd-districts",
+    "version": "1.0.0",
+    "name": "BangladeshDistricts",
+    "title": "Bangladesh Districts",
+    "status": "active",
+    "experimental": false,
+    "date": "2025-01-01",
+    "publisher": "Zarish Sphere Platform",
+    "description": "Administrative Districts of Bangladesh",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "1004",
+            "display": "Barguna",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "10"
+                }
+            ]
+        },
+        {
+            "code": "1006",
+            "display": "Barishal",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "10"
+                }
+            ]
+        },
+        {
+            "code": "1009",
+            "display": "Bhola",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "10"
+                }
+            ]
+        },
+        {
+            "code": "1042",
+            "display": "Jhalokati",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "10"
+                }
+            ]
+        },
+        {
+            "code": "1078",
+            "display": "Patuakhali",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "10"
+                }
+            ]
+        },
+        {
+            "code": "1079",
+            "display": "Pirojpur",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "10"
+                }
+            ]
+        },
+        {
+            "code": "2003",
+            "display": "Bandarban",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "20"
+                }
+            ]
+        },
+        {
+            "code": "2012",
+            "display": "Brahmanbaria",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "20"
+                }
+            ]
+        },
+        {
+            "code": "2013",
+            "display": "Chandpur",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "20"
+                }
+            ]
+        },
+        {
+            "code": "2015",
+            "display": "Chattogram",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "20"
+                }
+            ]
+        },
+        {
+            "code": "2019",
+            "display": "Cumilla",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "20"
+                }
+            ]
+        },
+        {
+            "code": "2022",
+            "display": "Cox's Bazar",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "20"
+                }
+            ]
+        },
+        {
+            "code": "2030",
+            "display": "Feni",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "20"
+                }
+            ]
+        },
+        {
+            "code": "2046",
+            "display": "Khagrachhari",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "20"
+                }
+            ]
+        },
+        {
+            "code": "2051",
+            "display": "Lakshmipur",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "20"
+                }
+            ]
+        },
+        {
+            "code": "2075",
+            "display": "Noakhali",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "20"
+                }
+            ]
+        },
+        {
+            "code": "2084",
+            "display": "Rangamati",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "20"
+                }
+            ]
+        },
+        {
+            "code": "3026",
+            "display": "Dhaka",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3029",
+            "display": "Faridpur",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3033",
+            "display": "Gazipur",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3035",
+            "display": "Gopalganj",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3048",
+            "display": "Kishoreganj",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3054",
+            "display": "Madaripur",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3056",
+            "display": "Manikganj",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3059",
+            "display": "Munshiganj",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3067",
+            "display": "Narayanganj",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3068",
+            "display": "Narsingdi",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3082",
+            "display": "Rajbari",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3086",
+            "display": "Shariatpur",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        },
+        {
+            "code": "3093",
+            "display": "Tangail",
+            "property": [
+                {
+                    "code": "division",
+                    "valueCode": "30"
+                }
+            ]
+        }
+    ]
+}

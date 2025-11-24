@@ -1,0 +1,418 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "ImplementationGuide-bd.fhir.core.json",
+      "resourceType" : "ImplementationGuide",
+      "id" : "bd.fhir.core",
+      "url" : "https://fhir.dghs.gov.bd/core/ImplementationGuide/bd.fhir.core",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "CodeSystem-bd-blood-groups.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-blood-groups",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-blood-groups",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-bd-country-list.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-country-list",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-country-list",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-bd-dose-form.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-dose-form",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-dose-form",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-bd-geocodes.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-geocodes",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-geocodes",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-bd-identifier-type.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-identifier-type",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-identifier-type",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-bd-immunization-reaction.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-immunization-reaction",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-immunization-reaction",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-bd-immunization-route.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-immunization-route",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-immunization-route",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-bd-immunization-site.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-immunization-site",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-immunization-site",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-bd-medication-code.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-medication-code",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-medication-code",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-bd-occupations.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-occupations",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-occupations",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-bd-religions.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-religions",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-religions",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-bd-vaccine-code.json",
+      "resourceType" : "CodeSystem",
+      "id" : "bd-vaccine-code",
+      "url" : "https://fhir.dghs.gov.bd/core/CodeSystem/bd-vaccine-code",
+      "version" : "0.2.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "StructureDefinition-bd-address.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-address",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-address",
+      "version" : "0.2.0",
+      "kind" : "complex-type",
+      "type" : "Address",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-blood-group.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-blood-group",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-blood-group",
+      "version" : "0.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-condition.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-condition",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-condition",
+      "version" : "0.2.0",
+      "kind" : "resource",
+      "type" : "Condition",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-divisions.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-divisions",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-divisions",
+      "version" : "0.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-encounter.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-encounter",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-encounter",
+      "version" : "0.2.0",
+      "kind" : "resource",
+      "type" : "Encounter",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-immunization.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-immunization",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-immunization",
+      "version" : "0.2.0",
+      "kind" : "resource",
+      "type" : "Immunization",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-location.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-location",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-location",
+      "version" : "0.2.0",
+      "kind" : "resource",
+      "type" : "Location",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-medication-request.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-medication-request",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-medication-request",
+      "version" : "0.2.0",
+      "kind" : "resource",
+      "type" : "MedicationRequest",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-medication.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-medication",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-medication",
+      "version" : "0.2.0",
+      "kind" : "resource",
+      "type" : "Medication",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-observation.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-observation",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-observation",
+      "version" : "0.2.0",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-organization.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-organization",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-organization",
+      "version" : "0.2.0",
+      "kind" : "resource",
+      "type" : "Organization",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-patient.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-patient",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-patient",
+      "version" : "0.2.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-practitioner.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-practitioner",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-practitioner",
+      "version" : "0.2.0",
+      "kind" : "resource",
+      "type" : "Practitioner",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bd-upazillas.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bd-upazillas",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/bd-upazillas",
+      "version" : "0.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-language.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "language",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/language",
+      "version" : "0.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-nationality.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "nationality",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/nationality",
+      "version" : "0.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-occupation-bd.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "occupation-bd",
+      "url" : "https://fhir.dghs.gov.bd/core/StructureDefinition/occupation-bd",
+      "version" : "0.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "ValueSet-bd-blood-group-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-blood-group-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-blood-group-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-city-corporation-code-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-city-corporation-code-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-city-corporation-code-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-condition-icd11-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-condition-icd11-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-condition-icd11-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-country-list-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-country-list-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-country-list-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-district-code-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-district-code-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-district-code-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-division-code-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-division-code-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-division-code-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-dose-form-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-dose-form-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-dose-form-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-encounter-class-subset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-encounter-class-subset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-encounter-class-subset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-encounter-status-subset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-encounter-status-subset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-encounter-status-subset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-identifier-type-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-identifier-type-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-identifier-type-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-immunization-reaction-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-immunization-reaction-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-immunization-reaction-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-immunization-route-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-immunization-route-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-immunization-route-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-immunization-site-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-immunization-site-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-immunization-site-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-language-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-language-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-language-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-medication-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-medication-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-medication-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-municipalities-code-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-municipalities-code-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-municipalities-code-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-occupations-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-occupations-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-occupations-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-religions-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-religions-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-religions-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-upazilla-code-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-upazilla-code-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-upazilla-code-valueset",
+      "version" : "0.2.0"
+    },
+    {
+      "filename" : "ValueSet-bd-vaccine-valueset.json",
+      "resourceType" : "ValueSet",
+      "id" : "bd-vaccine-valueset",
+      "url" : "https://fhir.dghs.gov.bd/core/ValueSet/bd-vaccine-valueset",
+      "version" : "0.2.0"
+    }
+  ]
+}
