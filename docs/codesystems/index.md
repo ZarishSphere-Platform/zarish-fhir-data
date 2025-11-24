@@ -8,49 +8,123 @@ A code system (also called a terminology or vocabulary) is a collection of conce
 
 ## Available Code Systems
 
-### SNOMED CT
+### International Standards
 
-**Systematized Nomenclature of Medicine - Clinical Terms**
+<div class="grid cards" markdown>
 
-- **Concepts**: 300,000+
-- **Coverage**: Diseases, findings, procedures, body structures, organisms
-- **Use Cases**: Clinical documentation, decision support, analytics
-- **URL**: `http://snomed.info/sct`
+-   :material-medical-bag:{ .lg .middle } **[SNOMED CT](snomed-ct.md)**
 
-[Learn more about SNOMED CT →](snomed-ct.md)
+    ---
 
-### LOINC
+    Clinical terminology with 300,000+ concepts covering diseases, findings, procedures, and more.
 
-**Logical Observation Identifiers Names and Codes**
+-   :material-test-tube:{ .lg .middle } **[LOINC](loinc.md)**
 
-- **Codes**: 90,000+
-- **Coverage**: Laboratory tests, clinical observations, vital signs
-- **Use Cases**: Lab results, vital signs, clinical measurements
-- **URL**: `http://loinc.org`
+    ---
 
-[Learn more about LOINC →](loinc.md)
+    Laboratory and clinical observations with 90,000+ codes for tests and measurements.
 
-### ICD-10
+-   :material-hospital-box:{ .lg .middle } **[ICD-10](icd-10.md)**
 
-**International Classification of Diseases, 10th Revision**
+    ---
 
-- **Codes**: 70,000+
-- **Coverage**: Diseases, injuries, health conditions
-- **Use Cases**: Diagnosis coding, billing, epidemiology
-- **URL**: `http://hl7.org/fhir/sid/icd-10`
+    International disease classification with 70,000+ diagnosis codes.
 
-[Learn more about ICD-10 →](icd-10.md)
+-   :material-pill:{ .lg .middle } **[RxNorm](rxnorm.md)**
 
-### RxNorm
+    ---
 
-**Normalized Naming System for Medications**
+    Medication terminology with 100,000+ drug concepts and relationships.
 
-- **Concepts**: 100,000+
-- **Coverage**: Medications, drug ingredients, dose forms
-- **Use Cases**: Medication orders, prescriptions, drug databases
-- **URL**: `http://www.nlm.nih.gov/research/umls/rxnorm`
+</div>
 
-[Learn more about RxNorm →](rxnorm.md)
+### Bangladesh FHIR Core
+
+The Bangladesh FHIR Core provides country-specific code systems for local healthcare needs:
+
+<div class="grid cards" markdown>
+
+-   :material-water:{ .lg .middle } **[Blood Groups](bd-blood-groups.md)**
+
+    ---
+
+    **8 concepts** - ABO and Rh blood group classifications.
+
+-   :material-hands-pray:{ .lg .middle } **[Religions](bd-religions.md)**
+
+    ---
+
+    **7 concepts** - Religious affiliations recognized in Bangladesh.
+
+-   :material-briefcase:{ .lg .middle } **[Occupations](bd-occupations.md)**
+
+    ---
+
+    **71 concepts** - Occupation categories for demographic data.
+
+-   :material-map-marker:{ .lg .middle } **[Geo Codes](bd-geocodes.md)**
+
+    ---
+
+    **1,591 concepts** - Complete geographic codes for Bangladesh (divisions, districts, upazilas, municipalities).
+
+-   :material-pill:{ .lg .middle } **[Medications](bd-medication-code.md)**
+
+    ---
+
+    **6 concepts** - Common medications used in Bangladesh.
+
+-   :material-needle:{ .lg .middle } **[Vaccines](bd-vaccine-code.md)**
+
+    ---
+
+    **10 concepts** - Vaccines in Bangladesh immunization programs.
+
+-   :material-medication:{ .lg .middle } **[Dose Forms](bd-dose-form.md)**
+
+    ---
+
+    **10 concepts** - Pharmaceutical dose forms (tablets, capsules, etc.).
+
+-   :material-card-account-details:{ .lg .middle } **[Identifier Types](bd-identifier-type.md)**
+
+    ---
+
+    **3 concepts** - Types of identifiers (NID, Birth Registration, etc.).
+
+-   :material-alert:{ .lg .middle } **[Immunization Reaction](bd-immunization-reaction.md)**
+
+    ---
+
+    **6 concepts** - Adverse reactions to immunizations.
+
+-   :material-needle:{ .lg .middle } **[Immunization Route](bd-immunization-route.md)**
+
+    ---
+
+    **5 concepts** - Routes of administration for vaccines.
+
+-   :material-human:{ .lg .middle } **[Immunization Site](bd-immunization-site.md)**
+
+    ---
+
+    **5 concepts** - Body sites for vaccine administration.
+
+-   :material-earth:{ .lg .middle } **[Country List](bd-country-list.md)**
+
+    ---
+
+    **188 concepts** - International country codes for nationality.
+
+</div>
+
+## Code System Statistics
+
+| Category | Code Systems | Total Concepts |
+|----------|--------------|----------------|
+| International Standards | 4 | 460,000+ |
+| Bangladesh Core | 12 | 1,910 |
+| **Total** | **16** | **461,910+** |
 
 ## Code System Structure
 
@@ -84,27 +158,33 @@ graph TD
 }
 ```
 
-### Programmatically
+### With Bangladesh Core
 
-```go
-import "github.com/zarishsphere-platform/zarish-fhir-data/pkg/terminology"
-
-// Load SNOMED CT
-snomedCT, err := terminology.LoadCodeSystem("snomed-ct")
-
-// Lookup a concept
-concept := snomedCT.LookupCode("386661006") // Fever
+```json
+{
+  "resourceType": "Patient",
+  "extension": [{
+    "url": "http://zarishsphere.org/fhir/StructureDefinition/religion",
+    "valueCodeableConcept": {
+      "coding": [{
+        "system": "https://fhir.dghs.gov.bd/core/CodeSystem/bd-religions",
+        "code": "1",
+        "display": "Islam"
+      }]
+    }
+  }]
+}
 ```
 
 ## Code System Comparison
 
-| Feature | SNOMED CT | LOINC | ICD-10 | RxNorm |
-|---------|-----------|-------|--------|--------|
-| **Primary Use** | Clinical terms | Lab/Observations | Diagnoses | Medications |
-| **Hierarchy** | Polyhierarchical | Flat | Hierarchical | Hierarchical |
-| **Granularity** | Very detailed | Detailed | Moderate | Detailed |
-| **Updates** | Biannual | Biannual | Annual | Monthly |
-| **License** | Free for use | Free | Free | Free |
+| Feature | SNOMED CT | LOINC | ICD-10 | Bangladesh Core |
+|---------|-----------|-------|--------|-----------------|
+| **Primary Use** | Clinical terms | Lab/Observations | Diagnoses | Local context |
+| **Hierarchy** | Polyhierarchical | Flat | Hierarchical | Flat |
+| **Granularity** | Very detailed | Detailed | Moderate | Specific |
+| **Updates** | Biannual | Biannual | Annual | As needed |
+| **Scope** | International | International | International | Bangladesh |
 
 ## Best Practices
 
@@ -112,7 +192,7 @@ concept := snomedCT.LookupCode("386661006") // Fever
     - Use **SNOMED CT** for detailed clinical documentation
     - Use **LOINC** for laboratory results and vital signs
     - Use **ICD-10** for diagnosis coding and billing
-    - Use **RxNorm** for medication orders and prescriptions
+    - Use **Bangladesh Core** for local demographic and administrative data
 
 !!! warning "Code System Versions"
     Always specify the code system version in production systems to ensure consistency.

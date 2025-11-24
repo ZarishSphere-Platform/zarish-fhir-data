@@ -9,14 +9,12 @@ repo_url: https://github.com/ZarishSphere-Platform/zarish-fhir-data
 theme:
   name: material
   palette:
-    # Light mode
     - scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Dark mode
     - scheme: slate
       primary: indigo
       accent: indigo
@@ -68,16 +66,51 @@ nav:
   - Home: index.md
   - Code Systems:
       - Overview: codesystems/index.md
-      - SNOMED CT: codesystems/snomed-ct.md
-      - LOINC: codesystems/loinc.md
-      - ICD-10: codesystems/icd-10.md
-      - RxNorm: codesystems/rxnorm.md
+      - International Standards:
+          - SNOMED CT: codesystems/snomed-ct.md
+          - LOINC: codesystems/loinc.md
+          - ICD-10: codesystems/icd-10.md
+          - RxNorm: codesystems/rxnorm.md
+      - Bangladesh Core:
+          - Blood Groups: codesystems/bd-blood-groups.md
+          - Religions: codesystems/bd-religions.md
+          - Occupations: codesystems/bd-occupations.md
+          - Geo Codes: codesystems/bd-geocodes.md
+          - Medications: codesystems/bd-medication-code.md
+          - Vaccines: codesystems/bd-vaccine-code.md
+          - Dose Forms: codesystems/bd-dose-form.md
+          - Identifier Types: codesystems/bd-identifier-type.md
+          - Immunization Reaction: codesystems/bd-immunization-reaction.md
+          - Immunization Route: codesystems/bd-immunization-route.md
+          - Immunization Site: codesystems/bd-immunization-site.md
+          - Country List: codesystems/bd-country-list.md
   - Value Sets:
       - Overview: valuesets/index.md
-      - Vital Signs: valuesets/vital-signs.md
-      - Medications: valuesets/medications.md
-      - Diagnoses: valuesets/diagnoses.md
-      - Procedures: valuesets/procedures.md
+      - Clinical:
+          - Blood Groups: valuesets/bd-blood-group-valueset.md
+          - Medications: valuesets/bd-medication-valueset.md
+          - Vaccines: valuesets/bd-vaccine-valueset.md
+          - Dose Forms: valuesets/bd-dose-form-valueset.md
+          - ICD-11 Conditions: valuesets/bd-condition-icd11-valueset.md
+      - Demographics:
+          - Religions: valuesets/bd-religions-valueset.md
+          - Occupations: valuesets/bd-occupations-valueset.md
+          - Languages: valuesets/bd-language-valueset.md
+          - Countries: valuesets/bd-country-list-valueset.md
+      - Geographic:
+          - Divisions: valuesets/bd-division-code-valueset.md
+          - Districts: valuesets/bd-district-code-valueset.md
+          - Upazilas: valuesets/bd-upazilla-code-valueset.md
+          - City Corporations: valuesets/bd-city-corporation-code-valueset.md
+          - Municipalities: valuesets/bd-municipalities-code-valueset.md
+      - Administrative:
+          - Identifier Types: valuesets/bd-identifier-type-valueset.md
+          - Encounter Class: valuesets/bd-encounter-class-subset.md
+          - Encounter Status: valuesets/bd-encounter-status-subset.md
+      - Immunization:
+          - Immunization Reaction: valuesets/bd-immunization-reaction-valueset.md
+          - Immunization Route: valuesets/bd-immunization-route-valueset.md
+          - Immunization Site: valuesets/bd-immunization-site-valueset.md
   - Guides:
       - Getting Started: guides/getting-started.md
       - Using Terminologies: guides/using-terminologies.md
